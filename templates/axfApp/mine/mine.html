@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "axfApp/base/base.html" %}
+{% load static %}
 
-</body>
-</html>
+{% block title %}我的{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" type="text/css" href="{% static 'axfApp/mine/css/mine.css' %}">
+{% endblock link %}
+
+{% block script %}
+    <script type="application/javascript" src="{% static 'axfApp/mine/js/mine.js' %}"></script>
+{% endblock script %}
+
+{% block main %}
+    <h1>mine</h1>
+    <h1>mine</h1>
+    <h1>mine</h1>
+{% endblock main %}
